@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title> Đây là trang web bóng đèn bật tắt </title>
+   <style>
+   
+    @keyframes spin {
+	from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+	}
+	
+	body {
+	background-color: purple;
+	}
+	
+    .anh {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: auto;
+	animation: spin 10s linear infinite;
+	}
+	
+    div {
+	text-align: center;
+	color: white;
+	}
+	
+	.nutbam1 {
+	border: none;
+	background-color: blue;
+	color: white;
+	font-size: 32px;
+	font-weight: 800;
+	padding: 20px 40px;
+	cursor: pointer;
+	transition: background 1s;
+	border-radius: 5px 20px;
+	}
+	
+	.nutbam1:hover {
+    background: gray;
+	transform: scale(1.1);
+    transition: transform 0.3s;
+	}
+	
+	.nutbam2 {
+	border: none;
+	background-color: white;
+	color: blue;
+	font-size: 32px;
+	font-weight: 800;
+	padding: 20px 40px;
+	border-radius: 20px 5px;
+	cursor: pointer;
+	transition: background 1s;
+	}
+	
+	.nutbam2:hover {
+	background: yellow;
+	transform: scale(1.1);
+    transition: transform 0.3s;
+	}
+	
+   </style>
+</head>   
+<body>
+ <img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/558307657_3985289635116373_7256758692164578175_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=kL_Ly1T-Z9sQ7kNvwFoiT4-&_nc_oc=Adm70NLj0HcIK8JzV5-AruoQ3b6QHn__vquZ17oje6Zaycu9SsweDd-h93gzs08NHlg&_nc_zt=23&_nc_ht=scontent.fsgn2-3.fna&_nc_gid=FyTi48HLMvpV9P3L6hwOiQ&_nc_ss=8&oh=00_AfweUVxZu-HQ2R6dDRuAYJlu2mBsy-RQ3Ejm2dMZyV6EbQ&oe=69C0163B" class="anh">
+ <div>
+<h2>Hãy thử xem website có sử dụng ngôn ngữ lập trình JavaScript sẽ làm được cái gì.</h2>
+<p>Đó là như này</p>
+<p>Bố hãy thử bật tắt cái bóng đèn này đi</p>
+ </div>
+
+<button onclick="document.getElementById('myImage').src='anhdensang.jpg'" class="nutbam1"> Bật đèn </button>
+
+<img id="myImage" src="anhdentat.jpg" style="width:150px">
+
+<button onclick="document.getElementById('myImage').src='anhdentat.jpg'" class="nutbam2"> Tắt đèn </button>
+
+</body>
+</html>
